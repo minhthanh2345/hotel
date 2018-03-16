@@ -1,6 +1,5 @@
-//please contact me vietthanh.nguyentrong@gmail.com
-//website https://vietthanhmusic.vn/ or https://nhaccuvietthanh.com/
-
+//please contact me nguyentronga7@gmail.com
+//website www.hotelphuyen.com
 (function($) {
     $.fn.nguyentrong = function(options) {        
         var defaults = {  
@@ -22,7 +21,7 @@
 			if(modalBG.length == 0) {
 				modalBG = $('<div class="nguyentrong-modal-bg" />').insertAfter(modal);
 			}		    
-			modal.bind('linhnguyen:open', function () {
+			modal.bind('trongnguyen:open', function () {
 			  modalBG.unbind('click.modalEvent');
 				$('.' + options.dismissmodalclass).unbind('click.modalEvent');
 				if(!locked) {
@@ -117,7 +116,7 @@ $(window).load(function() {
 			$(divpopup).attr('id', 'myModal');
 			$(divpopup).attr('class', 'linhnguyen-modal');
 			$( "body" ).append(divpopup);
-			$("#myModal").html("<a href='https://2.bp.blogspot.com/-b0D9peNnG_Y/WbotPKSgqII/AAAAAAAAASk/HvFTHmnf_1Mykvcwv_FIbXcx_3i-oGwMACLcBGAs/s1600/shop%2Bdan%2Borgan%2Bgia%2Buu%2Bdai.jpg' width='500px'/><br/>GỌI NGAY 0909 736 782 Ms Hương</a>. ĐỂ LẤY MÃ GIẢM GIÁ 10%. <h2><a class='close-nguyentrong-modal'>X</a></h2>");
+			$("#myModal").html("<a href='https://static.mytour.vn/upload_images/Image/Marketing/Th%C3%A1ng%204/crazy%20sales/crazy_T4_700x412.jpg' width='500px'/><br/>GỌI NGAY 0902 894 612 MR Trọng</a>. ĐỂ LẤY MÃ GIẢM GIÁ 20%. <h2><a class='close-nguyentrong-modal'>X</a></h2>");
 			$('#myModal').nguyentrong($('#myModal').data());
 		}
 });
